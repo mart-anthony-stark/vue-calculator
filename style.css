@@ -1,0 +1,36 @@
+#root{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+div{
+    text-align: center;
+    justify-content: center;
+}
+.btn{
+    border: 2px solid black;
+    cursor: pointer;
+}
+.btn:hover{
+    background: rgb(146, 142, 142);
+}
+#calculator{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(50px, 1fr);
+    width: 300px;
+}
+.display{
+    grid-column: 1/5;
+    background: grey;
+    color: white;
+    letter-spacing: 1.5px;
+}
+.zero{
+    grid-column: 1/3;
+}
+.op-btn{
+    background: orange;
+    color: white;
+}
